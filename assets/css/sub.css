@@ -1,0 +1,24 @@
+.section-wrapper{}
+
+/* visual */
+.sc-visual{position: relative;}
+.sc-visual .pagination{margin-top: 0; position: absolute; bottom: 0;z-index: 1;}
+/* info */
+.sc-info{}
+.sc-info .info-inner{}
+.sc-info .info-inner .brand-wrap{}
+.sc-info .brand-wrap span{}
+.sc-info .prod-wrap{}
+.sc-info .prod-wrap .badge-box{}
+.sc-info .badge-box span{}
+.sc-info .prod-wrap .review-box{}
+.sc-info .review-box .img-list{}
+.sc-info .img-list .img-item{}
+.sc-info .review-box .link-review{}
+.sc-info .link-review span{}
+.sc-info .link-review img{}
+.sc-info .price-wrap{}
+.sc-info .price-wrap .sale{}
+.sc-info .price-wrap .curr{}
+.sc-info .price-wrap .ori{}
+.sc-info .point-box{}

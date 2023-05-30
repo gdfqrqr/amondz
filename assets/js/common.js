@@ -104,12 +104,12 @@ $(function () {
         $('body').removeClass('hidden')
     })
     
-    $(document).click(function(e) {
-        if ($('main').has(e.target).length == 0) {
-            $('body').removeClass('hidden')
-            $('.popup-wrap').removeClass('show')
-        }
-    })
+    // $(document).click(function(e) {
+    //     if ($('main').has(e.target).length == 0) {
+    //         $('body').removeClass('hidden')
+    //         $('.popup-wrap').removeClass('show')
+    //     }
+    // })
 
 
     

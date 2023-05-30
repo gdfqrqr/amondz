@@ -1,5 +1,6 @@
 .section { padding: 0 15px; overflow: hidden;} 
 .section img {width: 100%;}
+.section:nth-of-type(n+4) { margin-top: 60px; } 
 
 /* visual */
 .sc-visual { margin: 10px 0 20px; } 

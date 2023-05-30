@@ -22,7 +22,7 @@
 .sc-info .prod-wrap .review-box { display: flex; margin-top: 12px; } 
 .sc-info .review-box .img-list { display: flex; } 
 .sc-info .img-list .img-item { width: 12px; height: 12px; } 
-.sc-info .img-list .img-item.img-item { margin-left: 2px; } 
+.sc-info .img-list .img-item+.img-item { margin-left: 2px; } 
 .sc-info .review-box .link-review { display: flex; } 
 .sc-info .link-review span { margin-left: 8px; font-size: 12px; font-weight: 500; letter-spacing: -0.5px; color: rgb(0, 0, 0); border-bottom: 1px solid rgb(0, 0, 0); } 
 .sc-info .link-review img { width: 16px; height: 16px; } 
@@ -50,6 +50,7 @@
 
 /* similar */
 .sc-similar { margin: 40px 0; overflow: hidden; } 
+.sc-similar .title-box { width: 100%; } 
 .section-wrapper .title { display: block; margin-bottom: 15px; font-size: 18px; line-height: 27px; font-weight: bold; letter-spacing: -0.5px; } 
 
 /* img */
@@ -83,10 +84,8 @@
 .sc-cs .cs-wrap .cs-box { width: calc(100% - 84px); } 
 .sc-cs .cs-box .write { margin-bottom: 10px; line-height: 22px; font-size: 13px; letter-spacing: -0.5px; color: rgb(0, 0, 0); white-space: pre-wrap; } 
 .sc-cs .cs-box .date-box { } 
-.sc-cs .date-box span { position: relative; font-size: 10px; letter-spacing: -0.5px; color: rgb(155, 155, 155); line-height: 15px; display: inline-block; } 
-.sc-cs .date-box span+span::before { content: ""; display: inline-block; width: 1px; height: 10px; margin: 2px 6px 0px; background: rgb(216, 216, 216); vertical-align: text-top; } 
-.sc-cs .date-box .id { } 
-.sc-cs .date-box .date { } 
+.date-box span { position: relative; font-size: 10px; letter-spacing: -0.5px; color: rgb(155, 155, 155); line-height: 15px; display: inline-block; } 
+.date-box span+span::before { content: ""; display: inline-block; width: 1px; height: 10px; margin: 2px 6px 0px; background: rgb(216, 216, 216); vertical-align: text-top; } 
 .sc-cs .cs-wrap .answer { margin-left: auto; line-height: 20px; color: rgb(98, 0, 240); font-size: 11px; font-weight: bold; letter-spacing: -0.5px; } 
 .sc-cs .link-wrap { padding: 0 15px; } 
 .sc-cs .link-wrap .link-more { border-color: rgb(225, 225, 225); font-size: 13px; font-weight: 500; letter-spacing: -0.3px; } 
@@ -108,8 +107,8 @@
 .sc-brand .brand-box span { } 
 .sc-brand .brand-box .like { font-size: 11px; margin-right: 2px; margin-top: 4px; letter-spacing: -0.5px; color: rgb(155, 155, 155); font-weight: 400; } 
 .sc-brand .like strong { color: #000; } 
-.sc-brand .badge-box { margin-left: auto; border-radius: 2px; border: 1px solid transparent; text-align: center; background-color: rgb(0, 0, 0); height: 32px; width: 80px; } 
-.sc-brand .badge-box span { font-size: 12px; font-weight: 500; letter-spacing: -0.5px; line-height: 32px; color: rgb(255, 255, 255); margin-left: 0; } 
+.sc-brand .btn-like { margin-left: auto; border-radius: 2px; border: 1px solid transparent; text-align: center; background-color: rgb(0, 0, 0); height: 32px; width: 80px; } 
+.sc-brand .btn-like span { font-size: 12px; font-weight: 500; letter-spacing: -0.5px; line-height: 32px; color: rgb(255, 255, 255); margin-left: 0; } 
 .sc-brand .img-list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 5px; } 
 .sc-brand .img-list .img-item { } 
 .sc-brand .img-item img { } 
@@ -125,3 +124,40 @@
 .fixed-wrap2 .btn-like span { font-family: Barlow; font-size: 15px; font-weight: 600; color: rgb(34, 34, 34); } 
 .fixed-wrap2 .link-buy { margin-left: auto; text-align: center; border-radius: 2px; background-color: rgb(0, 0, 0); height: 48px; line-height: 48px; width: calc(50% - 6px); } 
 .fixed-wrap2 .link-buy span { color: rgb(255, 255, 255); font-size: 13px; font-weight: 500; letter-spacing: -0.3px; } 
+
+
+/* tab02 */
+
+.review-wrap { padding-bottom: 100px; } 
+.review-wrap .text-wrap { padding: 25px 15px; } 
+.review-wrap .text-wrap .text-box { width: calc(100% - 200px); } 
+.review-wrap .text-box span { font-size: 12px; letter-spacing: -0.3px; color: rgb(155, 155, 155); } 
+.review-wrap .text-box em { color: rgb(0, 0, 0); font-weight: 500; } 
+.review-wrap .text-wrap .check-box { margin-top: 20px; } 
+.review-wrap .check-box input { position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); border: 0px; } 
+.review-wrap .check-box label { width: 18px; height: 18px; } 
+.review-wrap .check-box label::before { content: " "; display: inline-block; width: 20px; height: 20px; line-height: 24px; text-align: center; vertical-align: middle; margin-right: 8px; background-image: url("../img/sub/check-box.png"); background-size: cover; } 
+.review-wrap .check-box input:checked +label::before { background-image: url(../img/sub/check-box2.png); } 
+.review-wrap .check-box span { font-size: 13px; font-weight: 500; line-height: 24px; letter-spacing: -0.5px; vertical-align: top; } 
+
+.review-wrap .info-box::before { height: 15px; background: #fafafa; width: 100%; content: ''; position: absolute; top: 0; left: 0; } 
+.review-wrap .info-box { position: relative; padding: 30px 15px 35px; } 
+.review-wrap .inner { border-bottom: 1px solid rgb(237, 237, 237); } 
+.review-wrap .list-wrap { display: flex; align-items: center; } 
+.review-wrap .info-box .img-list { display: flex; margin-right: 8px; } 
+.review-wrap .info-box .img-item { width: 12px; height: 12px; } 
+.review-wrap .info-box .img-item+.img-item { margin-left: 2px; } 
+
+.review-wrap .review-box { margin-top: 15px; font-size: 13px; line-height: 22px; letter-spacing: -0.5px; } 
+.review-wrap .review-box span { } 
+.review-wrap .photo-box { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 15px; } 
+.review-wrap .photo-box img { width: 100px; height: 100px; } 
+
+.review-wrap .btn-like { display: flex; align-items: center; margin-top: 15px; } 
+.review-wrap .btn-like svg { width: 22px; height: 22px; } 
+.review-wrap .btn-like span { margin-left: 4px; font-size: 10px; font-weight: bold; line-height: 15px; color: rgb(155, 155, 155); } 
+
+.review-wrap .page-list { display: flex; justify-content: center; gap: 15px; } 
+.review-wrap .page-list .page-item { font-size: 14px; font-weight: 500; color: rgb(155, 155, 155); } 
+.review-wrap .page-list .page-item.on { text-decoration: underline; color: #000; } 
+.review-wrap .link-next { width: 16px; height: 16px; display: block;} 

@@ -93,7 +93,7 @@ $(function () {
 
     //login popup
     $('.btn-like').click(function(e){
-        e.preventDefault()
+        e.preventDefault();
         $('.popup-wrap').addClass('show')
         $('body').addClass('hidden')
     })

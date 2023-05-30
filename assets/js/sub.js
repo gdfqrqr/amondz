@@ -17,8 +17,10 @@ $(function () {
         $("#"+tab_id).addClass('curr');
     });
 
-    
+    //탭 클릭시 스크롤 이동 
+    $('.tab-item').click(function () {
+        var offset = $(".tab-item").offset(); 
+        $("html, body").animate({scrollTop: offset.top},200);
 
-
-
+    })
 })

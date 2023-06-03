@@ -112,7 +112,7 @@ $(function () {
     })
 
 
-
+    //푸터 약관 펼치고 닫기 
     $('.privacy-item .title-wrap').click(function(){
         if ($(this).siblings('.sub-wrap').hasClass('show')) {
             $(this).find('img').attr({src:"./assets/img/minus.png"})

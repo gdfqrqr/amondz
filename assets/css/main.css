@@ -24,7 +24,7 @@
 .sc-rec {position: relative; margin-top: 30px; padding: 30px 15px;} 
 .sc-rec::before {position: absolute; top: 0; left: 0; width: 100%; height: 10px; background-color: rgb(250, 249, 247); content: ''; } 
 .sc-rec .swiper-slide{ display: flex; flex-wrap: wrap; gap: 15px;}
-.sc-rec .swiper-slide a{width: calc(50% - 7.5px);}
+.sc-rec .prod-area{width: calc(50% - 7.5px);}
 
 /* benefit-01 */
 .sc-benefit img{width: 100%;}

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,43 +10,68 @@
     <link rel="stylesheet" href="./assets/css/sub.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 </head>
+
 <body>
-    <div class="ad-wrap">
+    <div class="ad-wrap" aria-label="상단 광고">
         <a href="" class="link-sale">
             <span>첫 구매라면 최대 8만원 할인 🙋🏻‍♀️</span>
-            <span class="sale">할인받기</span>
+            <!-- <em class="sale">할인받기</span> -->
         </a>
-        <button class="btn-close"><img src="./assets/img/close-w.png" alt></button>
+        <button class="btn-close" aria-label="광고 닫기"><img src="./assets/img/close-w.png" alt></button>
     </div>
     <header class="header">
-        <h2 class="blind">상단광고</h2>
-        
         <div class="header-area">
+            <h1 class="logo-wrap">
+                <a href="">
+                    <svg role="img" aria-label="amondz-logo" width="97" height="20" viewBox="0 0 97 20"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <defs>
+                            <path id="r7gwngiowa" d="M0 0h14.473v14.59H0z"></path>
+                        </defs>
+                        <g fill-rule="evenodd">
+                            <path
+                                d="M86.457 5.188v2.815h6.567l-6.847 9.376v1.992H97v-2.816h-6.96l6.68-9.375V5.188zM76.088 5.188c2.12 0 3.725.887 4.759 2.33V0h2.938v19.417h-2.938v-1.995c-1.034 1.47-2.639 2.356-4.76 2.356-3.7 0-6.775-3.19-6.775-7.296 0-4.132 3.075-7.294 6.776-7.294m4.759 7.294c0-2.579-1.85-4.438-4.298-4.438-2.45 0-4.298 1.86-4.298 4.438 0 2.58 1.849 4.44 4.298 4.44s4.298-1.86 4.298-4.44M67.668 10.902v8.515h-2.94v-8.211c0-2.108-1.197-3.217-3.045-3.217-1.931 0-3.454 1.167-3.454 3.996v7.432h-2.94V5.547h2.94v1.775c.897-1.44 2.366-2.134 4.215-2.134 3.047 0 5.224 2.108 5.224 5.714M51.02 11.543c.015-1.285-.45-2.393-1.308-3.13-.65-.557-1.48-.851-2.398-.851-1.514 0-3.08.802-4.187 2.15-1.846 2.244-1.897 5.313-.11 6.84.65.558 1.48.852 2.398.852 1.514 0 3.08-.802 4.187-2.15.9-1.092 1.404-2.412 1.418-3.71m-4.657-6.578c4.15 0 7.4 3.3 7.4 7.516 0 4.215-3.25 7.518-7.4 7.518-4.148 0-7.398-3.303-7.398-7.518 0-4.216 3.25-7.516 7.398-7.516M37.134 10.819v8.598h-2.94v-8.405c0-1.94-1.033-3.023-2.638-3.023-1.741 0-2.964 1.138-2.964 3.661v7.767h-2.939v-8.405c0-1.94-.951-3.023-2.556-3.023-1.66 0-3.021 1.138-3.021 3.661v7.767H17.14V5.547h2.936v1.665c.872-1.36 2.205-2.024 3.89-2.024 1.77 0 3.074.803 3.864 2.192.898-1.444 2.339-2.192 4.162-2.192 3.072 0 5.142 2.163 5.142 5.63">
+                            </path>
+                            <g transform="translate(0 5.188)">
+                                <mask id="59awzkkpeb" fill="#fff">
+                                    <use xlink:href="#r7gwngiowa"></use>
+                                </mask>
+                                <path
+                                    d="M11.534 7.293c0-2.578-1.849-4.437-4.298-4.437-2.448 0-4.297 1.859-4.297 4.437 0 2.582 1.849 4.44 4.297 4.44 2.45 0 4.298-1.858 4.298-4.44zM14.473.358v13.87h-2.939v-1.995c-1.033 1.47-2.639 2.356-4.76 2.356C3.075 14.59 0 11.4 0 7.293 0 3.162 3.075 0 6.775 0c2.12 0 3.726.887 4.76 2.33V.358h2.938z"
+                                    mask="url(#59awzkkpeb)"></path>
+                            </g>
+                        </g>
+                    </svg>
+                </a>
+            </h1>
             <div class="btn-wrap">
-                <button class="btn-menu">
+                <button class="btn-menu" aria-label="카테고리 열기">
                     <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 0c6.627 0 12 5.373 12 12s-5.373 12-12 12S0 18.627 0 12 5.373 0 12 0zm0 1.5C6.201 1.5 1.5 6.201 1.5 12S6.201 22.5 12 22.5 22.5 17.799 22.5 12 17.799 1.5 12 1.5zm4 13.25a.75.75 0 0 1 .102 1.493L16 16.25H8a.75.75 0 0 1-.102-1.493L8 14.75h8zm0-3.5a.75.75 0 0 1 .102 1.493L16 12.75H8a.75.75 0 0 1-.102-1.493L8 11.25h8zm0-3.5a.75.75 0 0 1 .102 1.493L16 9.25H8a.75.75 0 0 1-.102-1.493L8 7.75h8z" fill="#000" fill-rule="evenodd"/>
+                        <path
+                            d="M12 0c6.627 0 12 5.373 12 12s-5.373 12-12 12S0 18.627 0 12 5.373 0 12 0zm0 1.5C6.201 1.5 1.5 6.201 1.5 12S6.201 22.5 12 22.5 22.5 17.799 22.5 12 17.799 1.5 12 1.5zm4 13.25a.75.75 0 0 1 .102 1.493L16 16.25H8a.75.75 0 0 1-.102-1.493L8 14.75h8zm0-3.5a.75.75 0 0 1 .102 1.493L16 12.75H8a.75.75 0 0 1-.102-1.493L8 11.25h8zm0-3.5a.75.75 0 0 1 .102 1.493L16 9.25H8a.75.75 0 0 1-.102-1.493L8 7.75h8z"
+                            fill="#000" fill-rule="evenodd" />
                     </svg>
                 </button>
             </div>
-            <h1 class="logo-wrap">
-                <svg role="img" aria-label="amondz-logo" width="97" height="20" viewBox="0 0 97 20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="r7gwngiowa" d="M0 0h14.473v14.59H0z"></path></defs><g fill-rule="evenodd"><path d="M86.457 5.188v2.815h6.567l-6.847 9.376v1.992H97v-2.816h-6.96l6.68-9.375V5.188zM76.088 5.188c2.12 0 3.725.887 4.759 2.33V0h2.938v19.417h-2.938v-1.995c-1.034 1.47-2.639 2.356-4.76 2.356-3.7 0-6.775-3.19-6.775-7.296 0-4.132 3.075-7.294 6.776-7.294m4.759 7.294c0-2.579-1.85-4.438-4.298-4.438-2.45 0-4.298 1.86-4.298 4.438 0 2.58 1.849 4.44 4.298 4.44s4.298-1.86 4.298-4.44M67.668 10.902v8.515h-2.94v-8.211c0-2.108-1.197-3.217-3.045-3.217-1.931 0-3.454 1.167-3.454 3.996v7.432h-2.94V5.547h2.94v1.775c.897-1.44 2.366-2.134 4.215-2.134 3.047 0 5.224 2.108 5.224 5.714M51.02 11.543c.015-1.285-.45-2.393-1.308-3.13-.65-.557-1.48-.851-2.398-.851-1.514 0-3.08.802-4.187 2.15-1.846 2.244-1.897 5.313-.11 6.84.65.558 1.48.852 2.398.852 1.514 0 3.08-.802 4.187-2.15.9-1.092 1.404-2.412 1.418-3.71m-4.657-6.578c4.15 0 7.4 3.3 7.4 7.516 0 4.215-3.25 7.518-7.4 7.518-4.148 0-7.398-3.303-7.398-7.518 0-4.216 3.25-7.516 7.398-7.516M37.134 10.819v8.598h-2.94v-8.405c0-1.94-1.033-3.023-2.638-3.023-1.741 0-2.964 1.138-2.964 3.661v7.767h-2.939v-8.405c0-1.94-.951-3.023-2.556-3.023-1.66 0-3.021 1.138-3.021 3.661v7.767H17.14V5.547h2.936v1.665c.872-1.36 2.205-2.024 3.89-2.024 1.77 0 3.074.803 3.864 2.192.898-1.444 2.339-2.192 4.162-2.192 3.072 0 5.142 2.163 5.142 5.63"></path><g transform="translate(0 5.188)"><mask id="59awzkkpeb" fill="#fff"><use xlink:href="#r7gwngiowa"></use></mask><path d="M11.534 7.293c0-2.578-1.849-4.437-4.298-4.437-2.448 0-4.297 1.859-4.297 4.437 0 2.582 1.849 4.44 4.297 4.44 2.45 0 4.298-1.858 4.298-4.44zM14.473.358v13.87h-2.939v-1.995c-1.033 1.47-2.639 2.356-4.76 2.356C3.075 14.59 0 11.4 0 7.293 0 3.162 3.075 0 6.775 0c2.12 0 3.726.887 4.76 2.33V.358h2.938z" mask="url(#59awzkkpeb)"></path></g></g></svg>
-            </h1>
             <div class="btn-container">
                 <div class="btn-wrap">
-                    <button class="btn-search">
+                    <button class="btn-search" aria-label="검색 버튼">
                         <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M11.356 1.72c5.362 0 9.71 4.348 9.71 9.71 0 2.427-.891 4.646-2.363 6.348l3.572 3.253a.85.85 0 0 1-1.054 1.329l-.09-.072-3.65-3.324a9.67 9.67 0 0 1-6.125 2.176c-5.363 0-9.71-4.348-9.71-9.71 0-5.362 4.347-9.71 9.71-9.71zm0 1.7a8.01 8.01 0 1 0 0 16.02 8.01 8.01 0 0 0 0-16.02z" fill="#000" fill-rule="evenodd"/>
+                            <path
+                                d="M11.356 1.72c5.362 0 9.71 4.348 9.71 9.71 0 2.427-.891 4.646-2.363 6.348l3.572 3.253a.85.85 0 0 1-1.054 1.329l-.09-.072-3.65-3.324a9.67 9.67 0 0 1-6.125 2.176c-5.363 0-9.71-4.348-9.71-9.71 0-5.362 4.347-9.71 9.71-9.71zm0 1.7a8.01 8.01 0 1 0 0 16.02 8.01 8.01 0 0 0 0-16.02z"
+                                fill="#000" fill-rule="evenodd" />
                         </svg>
                     </button>
                 </div>
                 <div class="btn-wrap">
-                    <a href="" class="btn-cart">
+                    <a href="" class="btn-cart" aria-label="장바구니">
                         <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <g fill="none" fill-rule="evenodd">
-                                <path d="M0 0h24v24H0z"/>
-                                <path stroke="#000" stroke-width="1.5" stroke-linejoin="round" d="M4.799 5H19.21L21 22H3z"/>
-                                <path d="M15.503 4.5a3.5 3.5 0 0 0-7 0" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M0 0h24v24H0z" />
+                                <path stroke="#000" stroke-width="1.5" stroke-linejoin="round"
+                                    d="M4.799 5H19.21L21 22H3z" />
+                                <path d="M15.503 4.5a3.5 3.5 0 0 0-7 0" stroke="#000" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
                             </g>
                         </svg>
                     </a>
@@ -55,9 +81,27 @@
 
         <div class="cate-area">
             <div class="login-wrap">
-                <h2 class="logo-box">
-                    <svg role="img" aria-label="amondz-logo" width="97" height="20" viewBox="0 0 97 20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="r7gwngiowa" d="M0 0h14.473v14.59H0z"></path></defs><g fill-rule="evenodd"><path d="M86.457 5.188v2.815h6.567l-6.847 9.376v1.992H97v-2.816h-6.96l6.68-9.375V5.188zM76.088 5.188c2.12 0 3.725.887 4.759 2.33V0h2.938v19.417h-2.938v-1.995c-1.034 1.47-2.639 2.356-4.76 2.356-3.7 0-6.775-3.19-6.775-7.296 0-4.132 3.075-7.294 6.776-7.294m4.759 7.294c0-2.579-1.85-4.438-4.298-4.438-2.45 0-4.298 1.86-4.298 4.438 0 2.58 1.849 4.44 4.298 4.44s4.298-1.86 4.298-4.44M67.668 10.902v8.515h-2.94v-8.211c0-2.108-1.197-3.217-3.045-3.217-1.931 0-3.454 1.167-3.454 3.996v7.432h-2.94V5.547h2.94v1.775c.897-1.44 2.366-2.134 4.215-2.134 3.047 0 5.224 2.108 5.224 5.714M51.02 11.543c.015-1.285-.45-2.393-1.308-3.13-.65-.557-1.48-.851-2.398-.851-1.514 0-3.08.802-4.187 2.15-1.846 2.244-1.897 5.313-.11 6.84.65.558 1.48.852 2.398.852 1.514 0 3.08-.802 4.187-2.15.9-1.092 1.404-2.412 1.418-3.71m-4.657-6.578c4.15 0 7.4 3.3 7.4 7.516 0 4.215-3.25 7.518-7.4 7.518-4.148 0-7.398-3.303-7.398-7.518 0-4.216 3.25-7.516 7.398-7.516M37.134 10.819v8.598h-2.94v-8.405c0-1.94-1.033-3.023-2.638-3.023-1.741 0-2.964 1.138-2.964 3.661v7.767h-2.939v-8.405c0-1.94-.951-3.023-2.556-3.023-1.66 0-3.021 1.138-3.021 3.661v7.767H17.14V5.547h2.936v1.665c.872-1.36 2.205-2.024 3.89-2.024 1.77 0 3.074.803 3.864 2.192.898-1.444 2.339-2.192 4.162-2.192 3.072 0 5.142 2.163 5.142 5.63"></path><g transform="translate(0 5.188)"><mask id="59awzkkpeb" fill="#fff"><use xlink:href="#r7gwngiowa"></use></mask><path d="M11.534 7.293c0-2.578-1.849-4.437-4.298-4.437-2.448 0-4.297 1.859-4.297 4.437 0 2.582 1.849 4.44 4.297 4.44 2.45 0 4.298-1.858 4.298-4.44zM14.473.358v13.87h-2.939v-1.995c-1.033 1.47-2.639 2.356-4.76 2.356C3.075 14.59 0 11.4 0 7.293 0 3.162 3.075 0 6.775 0c2.12 0 3.726.887 4.76 2.33V.358h2.938z" mask="url(#59awzkkpeb)"></path></g></g></svg>
-                </h2>
+                <a href="" class="logo-box">
+                    <svg role="img" aria-label="amondz-logo" width="97" height="20" viewBox="0 0 97 20"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <defs>
+                            <path id="r7gwngiowa" d="M0 0h14.473v14.59H0z"></path>
+                        </defs>
+                        <g fill-rule="evenodd">
+                            <path
+                                d="M86.457 5.188v2.815h6.567l-6.847 9.376v1.992H97v-2.816h-6.96l6.68-9.375V5.188zM76.088 5.188c2.12 0 3.725.887 4.759 2.33V0h2.938v19.417h-2.938v-1.995c-1.034 1.47-2.639 2.356-4.76 2.356-3.7 0-6.775-3.19-6.775-7.296 0-4.132 3.075-7.294 6.776-7.294m4.759 7.294c0-2.579-1.85-4.438-4.298-4.438-2.45 0-4.298 1.86-4.298 4.438 0 2.58 1.849 4.44 4.298 4.44s4.298-1.86 4.298-4.44M67.668 10.902v8.515h-2.94v-8.211c0-2.108-1.197-3.217-3.045-3.217-1.931 0-3.454 1.167-3.454 3.996v7.432h-2.94V5.547h2.94v1.775c.897-1.44 2.366-2.134 4.215-2.134 3.047 0 5.224 2.108 5.224 5.714M51.02 11.543c.015-1.285-.45-2.393-1.308-3.13-.65-.557-1.48-.851-2.398-.851-1.514 0-3.08.802-4.187 2.15-1.846 2.244-1.897 5.313-.11 6.84.65.558 1.48.852 2.398.852 1.514 0 3.08-.802 4.187-2.15.9-1.092 1.404-2.412 1.418-3.71m-4.657-6.578c4.15 0 7.4 3.3 7.4 7.516 0 4.215-3.25 7.518-7.4 7.518-4.148 0-7.398-3.303-7.398-7.518 0-4.216 3.25-7.516 7.398-7.516M37.134 10.819v8.598h-2.94v-8.405c0-1.94-1.033-3.023-2.638-3.023-1.741 0-2.964 1.138-2.964 3.661v7.767h-2.939v-8.405c0-1.94-.951-3.023-2.556-3.023-1.66 0-3.021 1.138-3.021 3.661v7.767H17.14V5.547h2.936v1.665c.872-1.36 2.205-2.024 3.89-2.024 1.77 0 3.074.803 3.864 2.192.898-1.444 2.339-2.192 4.162-2.192 3.072 0 5.142 2.163 5.142 5.63">
+                            </path>
+                            <g transform="translate(0 5.188)">
+                                <mask id="59awzkkpeb" fill="#fff">
+                                    <use xlink:href="#r7gwngiowa"></use>
+                                </mask>
+                                <path
+                                    d="M11.534 7.293c0-2.578-1.849-4.437-4.298-4.437-2.448 0-4.297 1.859-4.297 4.437 0 2.582 1.849 4.44 4.297 4.44 2.45 0 4.298-1.858 4.298-4.44zM14.473.358v13.87h-2.939v-1.995c-1.033 1.47-2.639 2.356-4.76 2.356C3.075 14.59 0 11.4 0 7.293 0 3.162 3.075 0 6.775 0c2.12 0 3.726.887 4.76 2.33V.358h2.938z"
+                                    mask="url(#59awzkkpeb)"></path>
+                            </g>
+                        </g>
+                    </svg>
+                </a>
                 <div class="login-box">
                     <a href="">로그인</a>
                     <a href="">마이</a>
@@ -66,61 +110,81 @@
             <div class="cate-inner">
                 <div class="cate-wrap">
                     <h3 class="title-wrap">카테고리</h3>
-                        <ul class="cate-list">
-                            <li class="cate-item"><a href="">반지</a></li>
-                            <li class="cate-item"><a href="">목걸이</a></li>
-                            <li class="cate-item"><a href="">귀걸이</a></li>
-                            <li class="cate-item"><a href="">이어커프</a></li>
-                            <li class="cate-item"><a href="">팔찌</a></li>
-                            <li class="cate-item"><a href="">발찌</a></li>
-                            <li class="cate-item"><a href="">향수</a></li>
-                            <li class="cate-item"><a href="">헤어</a></li>
-                            <a href="" class="cate-item link-more">더보기 +</a>
-                        </ul>
-                        <ul class="cate-list more">
-                            <li class="cate-item"><a href="">타임피스</a></li>
-                            <li class="cate-item"><a href="">펜던트</a></li>
-                            <li class="cate-item"><a href="">ACC</a></li>
-                            <li class="cate-item"><a href="">DIGITAL</a></li>
-                            <li class="cate-item"><a href="">베스트</a></li>
-                            <li class="cate-item"><a href="">아몬즈 단독</a></li>
-                            <li class="cate-item"><a href="">14/18K</a></li>
-                            <li class="cate-item"><a href="">24K</a></li>
-                            <li class="cate-item"><a href="">커플 주얼리</a></li>
-                            <li class="cate-item"><a href="">맨 주얼리</a></li>
-                            <li class="cate-item"><a href="">오늘 출발</a></li>
-                            <li class="cate-item"><a href="">글로벌</a></li>
-                        </ul>
-                    </div>
-                    <div class="cate-wrap brand">
-                        <h3 class="title-wrap">브랜드</h3>
-                        <div class="down-box">
-                            <div class="text-wrap">
-                                <h2 class="logo-box">
-                                    <svg role="img" aria-label="amondz-logo" width="97" height="20" viewBox="0 0 97 20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="r7gwngiowa" d="M0 0h14.473v14.59H0z"></path></defs><g fill-rule="evenodd"><path d="M86.457 5.188v2.815h6.567l-6.847 9.376v1.992H97v-2.816h-6.96l6.68-9.375V5.188zM76.088 5.188c2.12 0 3.725.887 4.759 2.33V0h2.938v19.417h-2.938v-1.995c-1.034 1.47-2.639 2.356-4.76 2.356-3.7 0-6.775-3.19-6.775-7.296 0-4.132 3.075-7.294 6.776-7.294m4.759 7.294c0-2.579-1.85-4.438-4.298-4.438-2.45 0-4.298 1.86-4.298 4.438 0 2.58 1.849 4.44 4.298 4.44s4.298-1.86 4.298-4.44M67.668 10.902v8.515h-2.94v-8.211c0-2.108-1.197-3.217-3.045-3.217-1.931 0-3.454 1.167-3.454 3.996v7.432h-2.94V5.547h2.94v1.775c.897-1.44 2.366-2.134 4.215-2.134 3.047 0 5.224 2.108 5.224 5.714M51.02 11.543c.015-1.285-.45-2.393-1.308-3.13-.65-.557-1.48-.851-2.398-.851-1.514 0-3.08.802-4.187 2.15-1.846 2.244-1.897 5.313-.11 6.84.65.558 1.48.852 2.398.852 1.514 0 3.08-.802 4.187-2.15.9-1.092 1.404-2.412 1.418-3.71m-4.657-6.578c4.15 0 7.4 3.3 7.4 7.516 0 4.215-3.25 7.518-7.4 7.518-4.148 0-7.398-3.303-7.398-7.518 0-4.216 3.25-7.516 7.398-7.516M37.134 10.819v8.598h-2.94v-8.405c0-1.94-1.033-3.023-2.638-3.023-1.741 0-2.964 1.138-2.964 3.661v7.767h-2.939v-8.405c0-1.94-.951-3.023-2.556-3.023-1.66 0-3.021 1.138-3.021 3.661v7.767H17.14V5.547h2.936v1.665c.872-1.36 2.205-2.024 3.89-2.024 1.77 0 3.074.803 3.864 2.192.898-1.444 2.339-2.192 4.162-2.192 3.072 0 5.142 2.163 5.142 5.63"></path><g transform="translate(0 5.188)"><mask id="59awzkkpeb" fill="#fff"><use xlink:href="#r7gwngiowa"></use></mask><path d="M11.534 7.293c0-2.578-1.849-4.437-4.298-4.437-2.448 0-4.297 1.859-4.297 4.437 0 2.582 1.849 4.44 4.297 4.44 2.45 0 4.298-1.858 4.298-4.44zM14.473.358v13.87h-2.939v-1.995c-1.033 1.47-2.639 2.356-4.76 2.356C3.075 14.59 0 11.4 0 7.293 0 3.162 3.075 0 6.775 0c2.12 0 3.726.887 4.76 2.33V.358h2.938z" mask="url(#59awzkkpeb)"></path></g></g></svg>
-                                </h2>
-                                <div class="text-box">
-                                    <span>빛나는 나를 위한 주얼리 쇼핑앱</span>
-                                    <span>신규회원이라면 전상품 20% 할인</span>
-                                </div>
-                            </div>
-                            <a href="" class="link-download">
-                                <span>앱 다운로드</span>
-                                <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                                    <g fill="none" fill-rule="evenodd">
-                                        <path fill="#FFF" d="M-319-760H56v882h-375z"/>
-                                        <g transform="translate(-294 -17)">
-                                            <rect fill="#F7F7F7" width="325" height="95" rx="13"/>
-                                            <path d="M295.333 31.886h13.199v-1.042h-13.199v1.042zm6.078-13.552V27.8l-4.17-4.172-.737.737 5.428 5.429 5.429-5.43-.737-.736-4.171 4.172v-9.467h-1.042z" fill="#9B9B9B"/>
+                    <ul class="cate-list">
+                        <li class="cate-item"><a href="">반지</a></li>
+                        <li class="cate-item"><a href="">목걸이</a></li>
+                        <li class="cate-item"><a href="">귀걸이</a></li>
+                        <li class="cate-item"><a href="">이어커프</a></li>
+                        <li class="cate-item"><a href="">팔찌</a></li>
+                        <li class="cate-item"><a href="">발찌</a></li>
+                        <li class="cate-item"><a href="">향수</a></li>
+                        <li class="cate-item"><a href="">헤어</a></li>
+                    </ul>
+                    <a href="" class="link-more">더보기 +</a>
+                    <ul class="cate-list more">
+                        <li class="cate-item"><a href="">타임피스</a></li>
+                        <li class="cate-item"><a href="">펜던트</a></li>
+                        <li class="cate-item"><a href="">ACC</a></li>
+                        <li class="cate-item"><a href="">DIGITAL</a></li>
+                        <li class="cate-item"><a href="">베스트</a></li>
+                        <li class="cate-item"><a href="">아몬즈 단독</a></li>
+                        <li class="cate-item"><a href="">14/18K</a></li>
+                        <li class="cate-item"><a href="">24K</a></li>
+                        <li class="cate-item"><a href="">커플 주얼리</a></li>
+                        <li class="cate-item"><a href="">맨 주얼리</a></li>
+                        <li class="cate-item"><a href="">오늘 출발</a></li>
+                        <li class="cate-item"><a href="">글로벌</a></li>
+                    </ul>
+                </div>
+                <div class="cate-wrap brand">
+                    <h3 class="title-wrap">브랜드</h3>
+                    <div class="down-box">
+                        <div class="text-wrap">
+                            <a href="" class="logo-box">
+                                <svg role="img" aria-label="amondz-logo" width="97" height="20" viewBox="0 0 97 20"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <defs>
+                                        <path id="r7gwngiowa" d="M0 0h14.473v14.59H0z"></path>
+                                    </defs>
+                                    <g fill-rule="evenodd">
+                                        <path
+                                            d="M86.457 5.188v2.815h6.567l-6.847 9.376v1.992H97v-2.816h-6.96l6.68-9.375V5.188zM76.088 5.188c2.12 0 3.725.887 4.759 2.33V0h2.938v19.417h-2.938v-1.995c-1.034 1.47-2.639 2.356-4.76 2.356-3.7 0-6.775-3.19-6.775-7.296 0-4.132 3.075-7.294 6.776-7.294m4.759 7.294c0-2.579-1.85-4.438-4.298-4.438-2.45 0-4.298 1.86-4.298 4.438 0 2.58 1.849 4.44 4.298 4.44s4.298-1.86 4.298-4.44M67.668 10.902v8.515h-2.94v-8.211c0-2.108-1.197-3.217-3.045-3.217-1.931 0-3.454 1.167-3.454 3.996v7.432h-2.94V5.547h2.94v1.775c.897-1.44 2.366-2.134 4.215-2.134 3.047 0 5.224 2.108 5.224 5.714M51.02 11.543c.015-1.285-.45-2.393-1.308-3.13-.65-.557-1.48-.851-2.398-.851-1.514 0-3.08.802-4.187 2.15-1.846 2.244-1.897 5.313-.11 6.84.65.558 1.48.852 2.398.852 1.514 0 3.08-.802 4.187-2.15.9-1.092 1.404-2.412 1.418-3.71m-4.657-6.578c4.15 0 7.4 3.3 7.4 7.516 0 4.215-3.25 7.518-7.4 7.518-4.148 0-7.398-3.303-7.398-7.518 0-4.216 3.25-7.516 7.398-7.516M37.134 10.819v8.598h-2.94v-8.405c0-1.94-1.033-3.023-2.638-3.023-1.741 0-2.964 1.138-2.964 3.661v7.767h-2.939v-8.405c0-1.94-.951-3.023-2.556-3.023-1.66 0-3.021 1.138-3.021 3.661v7.767H17.14V5.547h2.936v1.665c.872-1.36 2.205-2.024 3.89-2.024 1.77 0 3.074.803 3.864 2.192.898-1.444 2.339-2.192 4.162-2.192 3.072 0 5.142 2.163 5.142 5.63">
+                                        </path>
+                                        <g transform="translate(0 5.188)">
+                                            <mask id="59awzkkpeb" fill="#fff">
+                                                <use xlink:href="#r7gwngiowa"></use>
+                                            </mask>
+                                            <path
+                                                d="M11.534 7.293c0-2.578-1.849-4.437-4.298-4.437-2.448 0-4.297 1.859-4.297 4.437 0 2.582 1.849 4.44 4.297 4.44 2.45 0 4.298-1.858 4.298-4.44zM14.473.358v13.87h-2.939v-1.995c-1.033 1.47-2.639 2.356-4.76 2.356C3.075 14.59 0 11.4 0 7.293 0 3.162 3.075 0 6.775 0c2.12 0 3.726.887 4.76 2.33V.358h2.938z"
+                                                mask="url(#59awzkkpeb)"></path>
                                         </g>
                                     </g>
                                 </svg>
                             </a>
+                            <div class="text-box">
+                                <span>빛나는 나를 위한 주얼리 쇼핑앱</span>
+                                <span>신규회원이라면 전상품 20% 할인</span>
+                            </div>
                         </div>
+                        <a href="" class="link-download">
+                            <span>앱 다운로드</span>
+                            <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                <g fill="none" fill-rule="evenodd">
+                                    <path fill="#FFF" d="M-319-760H56v882h-375z" />
+                                    <g transform="translate(-294 -17)">
+                                        <rect fill="#F7F7F7" width="325" height="95" rx="13" />
+                                        <path
+                                            d="M295.333 31.886h13.199v-1.042h-13.199v1.042zm6.078-13.552V27.8l-4.17-4.172-.737.737 5.428 5.429 5.429-5.43-.737-.736-4.171 4.172v-9.467h-1.042z"
+                                            fill="#9B9B9B" />
+                                    </g>
+                                </g>
+                            </svg>
+                        </a>
                     </div>
-                    <button class="btn-close">
-                        <img src='./assets/img/close-b.png' alt>
-                    </button>
+                </div>
+                <button class="btn-close" aria-label="카테고리 닫기">
+                    <img src='./assets/img/close-b.png' alt>
+                </button>
             </div>
         </div>
         <div class="search-wrap">
@@ -128,10 +192,10 @@
                 <form action="">
                     <fieldset>
                         <legend class="blind">제품검색</legend>
-                        <img src="./assets/img/search.png" alt>
+                        <img src="./assets/img/search.png" alt="검색 아이콘">
                         <input type="text" placeholder="궁금한 주얼리를 검색해보세요!">
                     </fieldset>
-                    <button class="btn-cancel">취소</button>
+                    <button class="btn-cancel" aria-label="검색창 닫기">취소</button>
                 </form>
                 <div class="rec-wrap">
                     <h3 class="title-wrap">추천 검색어</h3>
@@ -152,33 +216,33 @@
                         <ul class="swiper-wrapper">
                             <li class="swiper-slide">
                                 <a href="">
-                                    <img src="assets/img/search-01.jpg" alt>
+                                    <div class="thumb-box"><img src="assets/img/search-01.jpg" alt></div>
                                     <div class="prod-wrap">
                                         <div class="title-box">
-                                            <strong>인오도르</strong>
-                                            <span>Mingle ring</span>
+                                            <em>인오도르</em>
+                                            <p>Mingle ring</p>
                                         </div>
                                     </div>
                                 </a>
                             </li>
                             <li class="swiper-slide">
                                 <a href="">
-                                    <img src="assets/img/search-02.jpg" alt>
+                                    <div class="thumb-box"><img src="assets/img/search-02.jpg" alt></div>
                                     <div class="prod-wrap">
                                         <div class="title-box">
-                                            <strong>모움</strong>
-                                            <span>[아몬즈 단독] 'Veining' 17N (Silver)</span>
+                                            <em>모움</em>
+                                            <p>[아몬즈 단독] 'Veining' 17N (Silver)</p>
                                         </div>
                                     </div>
                                 </a>
                             </li>
                             <li class="swiper-slide">
                                 <a href="">
-                                    <img src="assets/img/search-03.jpg" alt>
+                                    <div class="thumb-box"><img src="assets/img/search-03.jpg" alt></div>
                                     <div class="prod-wrap">
                                         <div class="title-box">
-                                            <strong>스튜디오 레이그흐</strong>
-                                            <span>[아몬즈 단독] 2WAY ROPE NECKLACE 019</span>
+                                            <em>스튜디오 레이그흐</em>
+                                            <p>[아몬즈 단독] 2WAY ROPE NECKLACE 019</p>
                                         </div>
                                     </div>
                                 </a>
@@ -190,21 +254,23 @@
         </div>
     </header>
     <main>
-        <div class="section-wrapper">
-            <section class="sc-visual">
-                <h2 class="blind">상품이미지</h2>
-                <div class="swiper5">
-                    <ul class="swiper-wrapper">
-                        <li class="swiper-slide"><img src="./assets/img/sub/visual-01.jpg" alt></li>
-                        <li class="swiper-slide"><img src="./assets/img/sub/visual-02.jpg" alt></li>
-                        <li class="swiper-slide"><img src="./assets/img/sub/visual-03.jpg" alt></li>
-                        <li class="swiper-slide"><img src="./assets/img/sub/visual-04.jpg" alt></li>
-                    </ul>
-                    <div class="pagination"></div>
-                </div>
-            </section>
-            <section class="section sc-info">
-                <h2 class="blind">상품정보</h2>
+        <section>
+            <h2 class="blind">상품상세페이지</h2>
+            <div class="section-wrapper">
+                <section class="sc-visual">
+                    <h3 class="blind">상품이미지</h3>
+                    <div class="swiper5">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide"><img src="./assets/img/sub/visual-01.jpg" alt></li>
+                            <li class="swiper-slide"><img src="./assets/img/sub/visual-02.jpg" alt></li>
+                            <li class="swiper-slide"><img src="./assets/img/sub/visual-03.jpg" alt></li>
+                            <li class="swiper-slide"><img src="./assets/img/sub/visual-04.jpg" alt></li>
+                        </ul>
+                        <div class="pagination"></div>
+                    </div>
+                </section>
+                <section class="section sc-info">
+                    <h3 class="blind">상품정보</h3>
                     <div class="inner">
                         <div class="brand-wrap">
                             <img src="./assets/img/sub/brand-01.jpg" alt>
@@ -227,156 +293,162 @@
                                 </a>
                             </div>
                             <div class="price-wrap">
-                                <span class="sale">30%</span>
+                                <em class="sale">30%</em>
                                 <span class="curr"><strong>198,450</strong>원</span>
                                 <span class="ori"><strong>198,450</strong>원</span>
                             </div>
                             <div class="point-box"><span>801포인트 적립</span></div>
                         </div>
                     </div>
-            </section>
-            <section class="section sc-delivery">
-                <div class="inner">
-                    <h2 class="blind">배송정보</h2>
-                    <div class="info-wrap">
-                        <div class="title-box">
-                            <strong>배송정보</strong>
-                            <img src="./assets/img/sub/notice.png" alt>
+                </section>
+                <section class="section sc-delivery">
+                    <div class="inner">
+                        <h3 class="blind">배송정보</h3>
+                        <div class="info-wrap">
+                            <div class="title-box">
+                                <strong>배송정보</strong>
+                                <img src="./assets/img/sub/notice.png" alt>
+                            </div>
+                            <a href="" class="link-cs">브랜드에 문의하기</a>
                         </div>
-                        <a href="" class="link-cs">브랜드에 문의하기</a>
-                    </div>
-                    <div class="deli-wrap">
-                        <div class="icon-box">
-                            <img src="./assets/img/sub/delivery.webp" alt>
+                        <div class="deli-wrap">
+                            <div class="icon-box">
+                                <img src="./assets/img/sub/delivery.webp" alt>
+                            </div>
+                            <p class="text-box">
+                                <em>주문 제작 배송</em>
+                                <span>평균 7일 내 배송 (주말, 공휴일 제외)</span>
+                                <dd class="description">주문제작 상품으로 상품 제작에 5일, 배송에 2일이 소요됩니다.</span>
+                            </p>
                         </div>
-                        <p class="text-box">
-                            <em>주문 제작 배송</em>
-                            <span>평균 7일 내 배송 (주말, 공휴일 제외)</span>
-                            <span class="description">주문제작 상품으로 상품 제작에 5일, 배송에 2일이 소요됩니다.</span>
-                        </p>
                     </div>
-                </div>
-            </section>
-            <section class="section sc-similar">
-                <h2 class="blind">유사상품추천</h2>
-                <strong class="title">비슷한 상품</strong>
-                <div class="swiper3">
-                    <ul class="swiper-wrapper">
-                        <li class="swiper-slide">
-                            <a href="">
-                                <img src="./assets/img/sub/smilar-01.jpg" alt>
-                                <div class="prod-wrap">
-                                    <div class="title-box">
-                                        <span>Alice Heart Pearl Necklace</span>
+                </section>
+                <section class="section sc-similar">
+                    <h3 class="blind">유사상품추천</h3>
+                    <strong class="title">비슷한 상품</strong>
+                    <div class="swiper3">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <a href="">
+                                    <div class="thumb-box"><img src="./assets/img/sub/smilar-01.jpg" alt></div>
+                                    <div class="prod-wrap">
+                                        <div class="title-box">
+                                            <p>Alice Heart Pearl Necklace</p>
+                                        </div>
+                                        <div class="price-wrap">
+                                            <span class="curr"><strong>78,000</strong>원</span>
+                                        </div>
                                     </div>
-                                    <div class="price-wrap">
-                                        <span class="curr"><strong>78,000</strong>원</span>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="">
+                                    <div class="thumb-box"><img src="./assets/img/sub/smilar-02.jpg" alt></div>
+                                    <div class="prod-wrap">
+                                        <div class="title-box">
+                                            <p>[아몬즈 단독] 14k 이태리 체인 데일리 할로우팔찌</p>
+                                        </div>
+                                        <div class="price-wrap">
+                                            <em class="sale">10%</em>
+                                            <span class="curr"><strong>450,000</strong>원</span>
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="swiper-slide">
-                            <a href="">
-                                <img src="./assets/img/sub/smilar-02.jpg" alt>
-                                <div class="prod-wrap">
-                                    <div class="title-box">
-                                        <span>[아몬즈 단독] 14k 이태리 체인 데일리 할로우팔찌</span>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="">
+                                    <div class="thumb-box"><img src="./assets/img/sub/smilar-03.jpg" alt></div>
+                                    <div class="prod-wrap">
+                                        <div class="title-box">
+                                            <p>데일리 클래식 반지 (14k ,18k)</p>
+                                        </div>
+                                        <div class="price-wrap">
+                                            <em class="sale">35%</em>
+                                            <span class="curr"><strong>87,750</strong>원</span>
+                                        </div>
                                     </div>
-                                    <div class="price-wrap">
-                                        <span class="sale">10%</span>
-                                        <span class="curr"><strong>450,000</strong>원</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="swiper-slide">
-                            <a href="">
-                                <img src="./assets/img/sub/smilar-03.jpg" alt>
-                                <div class="prod-wrap">
-                                    <div class="title-box">
-                                        <span>데일리 클래식 반지 (14k ,18k)</span>
-                                    </div>
-                                    <div class="price-wrap">
-                                        <span class="sale">35%</span>
-                                        <span class="curr"><strong>87,750</strong>원</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <section class="sc-img">
-                <h2 class="blind">상품상세이미지</h2>
-                <div class="tab-wrap">
-                    <button class="tab-item curr" data-tab="tab1">상세 정보</button>
-                    <button class="tab-item" data-tab="tab2">상품 후기(1)</button>
-                </div>
-                <div id="tab1" class="tab-content curr">
-                    <div class="img-wrap">
-                        <img src="./assets/img/sub/detail-01.jpg" alt>
-                        <!-- vedio -->
-                        <div class="player-wrapper">
-                            <div class="react-player" style="width: 100%; height: 100%;">
-                                <div data-vimeo-initialized="true" style="width: 100%; height: 100%; overflow: hidden;">
-                                    <div style="padding:100% 0 0 0;position:relative;">
-                                        <iframe src="https://player.vimeo.com/video/784677876?h=884f62ff07&amp;title=0&amp;byline=0&amp;portrait=0&amp;muted=1&amp;autoplay=1&amp;autopause=0&amp;loop=1&amp;app_id=122963" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="-" data-ready="true"></iframe>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="sc-img">
+                    <h3 class="blind">상품상세이미지</h3>
+                    <div class="tab-wrap">
+                        <button class="tab-item curr" data-tab="tab1" aria-label="상세정보 탭">상세 정보</button>
+                        <button class="tab-item" data-tab="tab2" aria-label="상품후기 탭">상품 후기(1)</button>
+                    </div>
+                    <div id="tab1" class="tab-content curr">
+                        <div class="img-wrap">
+                            <img src="./assets/img/sub/detail-01.jpg" alt>
+                            <!-- vedio -->
+                            <div class="player-wrapper">
+                                <div class="react-player" style="width: 100%; height: 100%;">
+                                    <div data-vimeo-initialized="true"
+                                        style="width: 100%; height: 100%; overflow: hidden;">
+                                        <div style="padding:100% 0 0 0;position:relative;">
+                                            <iframe
+                                                src="https://player.vimeo.com/video/784677876?h=884f62ff07&amp;title=0&amp;byline=0&amp;portrait=0&amp;muted=1&amp;autoplay=1&amp;autopause=0&amp;loop=1&amp;app_id=122963"
+                                                frameborder="0" allow="autoplay; fullscreen; picture-in-picture"
+                                                allowfullscreen=""
+                                                style="position:absolute;top:0;left:0;width:100%;height:100%;" title="-"
+                                                data-ready="true"></iframe>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+                            <img src="./assets/img/sub/detail-02.jpg" alt>
+                            <img src="./assets/img/sub/detail-03.jpg" alt>
+                            <img src="./assets/img/sub/detail-04.jpg" alt>
+                            <img src="./assets/img/sub/detail-05.jpg" alt>
+                            <img src="./assets/img/sub/detail-06.jpg" alt>
                         </div>
-                        <img src="./assets/img/sub/detail-02.jpg" alt>
-                        <img src="./assets/img/sub/detail-03.jpg" alt>
-                        <img src="./assets/img/sub/detail-04.jpg" alt>
-                        <img src="./assets/img/sub/detail-05.jpg" alt>
-                        <img src="./assets/img/sub/detail-06.jpg" alt>
-                    </div>
-                    <div class="info-wrap">
-                        <strong class="title">상품 상세 정보</strong>
-                        <p class="info-list">
-                            <span class="category">카테고리</span>
-                            <span class="description">목걸이, 하트목걸이, 원석목걸이, 펜던트목걸이, 14/18K, 아몬즈 단독</span>
-                        </p>
-                        <p class="info-list">
-                            <span class="category">소재/베이스</span>
-                            <span class="description">14K 단독</span>
-                        </p>
-                        <p class="info-list">
-                            <span class="category">소재/기타</span>
-                            <span class="description">-</span>
-                        </p>
-                        <p class="info-list">
-                            <span class="category">소재/도금</span>
-                            <span class="description">-</span>
-                        </p>
-                        <p class="info-list">
-                            <span class="category">소재/스톤</span>
-                            <span class="description">합성석</span>
-                        </p>
-                        <p class="info-list">
-                            <span class="category">컬러/패턴</span>
-                            <span class="description">옐로우골드,로즈골드</span>
-                        </p>
-                        <p class="info-list">
-                            <span class="category">모양</span>
-                            <span class="description">하트</span>
-                        </p>
-                        <p class="info-list">
-                            <span class="category">사이즈</span>
-                            <span class="description">상세페이지 참고</span>
-                        </p>
-                        <p class="info-list">
-                            <span class="category">중량</span>
-                            <span class="description">상세페이지 참고</span>
-                        </p>
-                    </div>
-                    <section class="sc-cs">
-                        <h2 class="blind">문의 및 교환, as정보</h2>
-                        <strong class="title">브랜드에 문의하기 (26)</strong>
+                        <div class="info-wrap">
+                            <strong class="title">상품 상세 정보</strong>
+                            <dl class="info-list">
+                                <dd class="category">카테고리</dd>
+                                <dd class="description">목걸이, 하트목걸이, 원석목걸이, 펜던트목걸이, 14/18K, 아몬즈 단독</dd>
+                            </dl>
+                            <dl class="info-list">
+                                <dd class="category">소재/베이스</dd>
+                                <dd class="description">14K 단독</dd>
+                            </dl>
+                            <dl class="info-list">
+                                <dd class="category">소재/기타</dd>
+                                <dd class="description">-</dd>
+                            </dl>
+                            <dl class="info-list">
+                                <dd class="category">소재/도금</dd>
+                                <dd class="description">-</dd>
+                            </dl>
+                            <dl class="info-list">
+                                <dd class="category">소재/스톤</dd>
+                                <dd class="description">합성석</dd>
+                            </dl>
+                            <dl class="info-list">
+                                <dd class="category">컬러/패턴</dd>
+                                <dd class="description">옐로우골드,로즈골드</dd>
+                            </dl>
+                            <dl class="info-list">
+                                <dd class="category">모양</dd>
+                                <dd class="description">하트</dd>
+                            </dl>
+                            <dl class="info-list">
+                                <dd class="category">사이즈</dd>
+                                <dd class="description">상세페이지 참고</dd>
+                            </dl>
+                            <dl class="info-list">
+                                <dd class="category">중량</dd>
+                                <dd class="description">상세페이지 참고</dd>
+                            </dl>
+                        </div>
+                        <section class="sc-cs">
+                            <h4 class="blind">문의 및 교환, as정보</h4>
+                            <strong class="title">브랜드에 문의하기 (26)</strong>
                             <div class="cs-wrap">
                                 <div class="cs-inner">
                                     <div class="cs-box">
-                                        <div class="write">안녕하세요. 혹시 추가금 들여서 하트 뒷면을 채울 수 있을까요?</div>
+                                        <p class="write">안녕하세요. 혹시 추가금 들여서 하트 뒷면을 채울 수 있을까요?</p>
                                         <div class="date-box">
                                             <span class="id">ekth**</span>
                                             <span class="date">2023.05.17</span>
@@ -388,7 +460,7 @@
                             <div class="cs-wrap">
                                 <div class="cs-inner">
                                     <div class="cs-box">
-                                        <div class="write">안녕하세요. 혹시 추가금 들여서 하트 뒷면을 채울 수 있을까요?</div>
+                                        <p class="write">안녕하세요. 혹시 추가금 들여서 하트 뒷면을 채울 수 있을까요?</p>
                                         <div class="date-box">
                                             <span class="id">ekth**</span>
                                             <span class="date">2023.05.17</span>
@@ -400,238 +472,261 @@
                             <div class="link-wrap"><a href="" class="link-more">브랜드 문의 전체보기</a></div>
                             <div class="badge-box"><span>문의작성</span></div>
                             <div class="btn-wrap">
-                                <button class="btn btn-return">
+                                <button class="btn btn-return" aria-label="교환 및 반품정보버튼">
                                     <img src="./assets/img/sub/arrow.png" alt>
                                     <span>교환 및 반품 정보</span>
                                 </button>
-                                <button class="btn btn-as">
+                                <button class="btn btn-as" aria-label="a/s정보 버튼">
                                     <img src="./assets/img/sub/arrow.png" alt>
                                     <span>A/S 정보</span>
                                 </button>
                             </div>
-                    </section>
-                    <section class="sc-brand">
-                        <h2 class="blind">동일 브랜드 상품</h2>
-                        <storng class="title">동일 브랜드 상품 더보기</storng>
-                        <div class="brand-wrap">
-                            <img src="./assets/img/sub/brand-01.jpg" alt>
-                            <div class="brand-box">
-                                <span>가이거주얼리</span>
-                                <span class="like">좋아요 <strong>48</strong></span>
-                            </div>
-                            <button class="btn-like"><span>좋아요</span></button>
-                        </div>
-                        <ul class="img-list">
-                            <div class="img-item"><img src="./assets/img/sub/brand-02.jpg" alt></div>
-                            <div class="img-item"><img src="./assets/img/sub/brand-03.jpg" alt></div>
-                            <div class="img-item"><img src="./assets/img/sub/brand-04.jpg" alt></div>
-                            <div class="img-item"><img src="./assets/img/sub/brand-05.jpg" alt></div>
-                            <div class="img-item"><img src="./assets/img/sub/brand-06.jpg" alt></div>
-                            <div class="img-item"><img src="./assets/img/sub/brand-07.jpg" alt></div>
-                            <div class="img-item"><img src="./assets/img/sub/brand-08.jpg" alt></div>
-                            <div class="img-item"><img src="./assets/img/sub/brand-09.jpg" alt></div>
-                            <div class="img-item"><img src="./assets/img/sub/brand-10.jpg" alt></div>
-                        </ul>
-                    </section>
-                </div>
-                <div id="tab2" class="tab-content">
-                    <div class="review-wrap">
-                        <div class="text-wrap">
-                            <div class="text-box">
-                                <span>상품 구매 후 후기를 작성하면 <em>최대 1,000 포인트</em>를 드려요</span>
-                            </div>
-                            <div class="check-box">
-                                <input type="checkbox" name="" id="check">
-                                <label for="check">
-                                    <span>포토후기만 보기</span>
-                                </label>
-                            </div>
-                        </div>
-                        <div class="info-box">
-                            <div class="inner">
-                                <div class="list-wrap">
-                                    <ul class="img-list">
-                                        <li class="img-item"><img src="./assets/img/sub/star.png" alt></li>
-                                        <li class="img-item"><img src="./assets/img/sub/star.png" alt></li>
-                                        <li class="img-item"><img src="./assets/img/sub/star.png" alt></li>
-                                        <li class="img-item"><img src="./assets/img/sub/star.png" alt></li>
-                                        <li class="img-item"><img src="./assets/img/sub/star.png" alt></li>
-                                    </ul>
-                                    <div class="date-box">
-                                        <span class="id">ekth**</span>
-                                        <span class="date">2023.05.17</span>
-                                    </div>
+                        </section>
+                        <section class="sc-brand">
+                            <h2 class="blind">동일 브랜드 상품</h2>
+                            <storng class="title">동일 브랜드 상품 더보기</storng>
+                            <div class="brand-wrap">
+                                <img src="./assets/img/sub/brand-01.jpg" alt>
+                                <div class="brand-box">
+                                    <span>가이거주얼리</span>
+                                    <span class="like">좋아요 <strong>48</strong></span>
                                 </div>
-                                <div class="review-box"><span>길이도 적당하고 반짝이는 게 예뻐요!</span></div>
-                                <div class="photo-box"><img src="./assets/img/sub/photo-01.jpg" alt></div>
-                                <button class="btn-like">
-                                        <svg role="img" aria-label="좋아요 비활성화" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M15.824 4.005a5.068 5.068 0 0 0-3.753 1.937L12 6.036l-.07-.094A5.066 5.066 0 0 0 7.94 4C5.097 4 2.8 6.386 2.8 9.32a5.42 5.42 0 0 0 1.09 3.275l.124.158.382.449c1.175 1.338 3.37 3.338 6.587 6.004.663.55 1.626.54 2.279-.022l1.002-.869c3.007-2.626 4.895-4.449 5.691-5.505l.154-.215c.16-.208.312-.444.447-.695l.128-.256a.802.802 0 0 0 .059-.133c.294-.65.457-1.41.457-2.192C21.2 6.386 18.903 4 16.06 4l-.236.005zM16.06 5c2.282 0 4.14 1.93 4.14 4.32 0 .549-.098 1.082-.286 1.58l-.119.287-.006.013a4.521 4.521 0 0 1-.355.623l-.136.188c-.68 1.004-2.804 3.055-6.35 6.123l-.34.293a.765.765 0 0 1-.987.009l-1.058-.884c-2.714-2.287-4.564-4.01-5.541-5.155l-.118-.14A4.42 4.42 0 0 1 3.8 9.32C3.8 6.93 5.658 5 7.94 5c1.526 0 2.897.845 3.619 2.196l.441.826.441-.826C13.163 5.845 14.534 5 16.06 5z" fill="#000000" fill-rule="evenodd"></path></svg>
-                                        <span>좋아요</span>
-                                </button>
+                                <button class="btn-like" aria-label="좋아요버튼"><span>좋아요</span></button>
                             </div>
-                            <div class="inner">
-                                <div class="list-wrap">
-                                    <ul class="img-list">
-                                        <li class="img-item"><img src="./assets/img/sub/star.png" alt></li>
-                                        <li class="img-item"><img src="./assets/img/sub/star.png" alt></li>
-                                        <li class="img-item"><img src="./assets/img/sub/star.png" alt></li>
-                                        <li class="img-item"><img src="./assets/img/sub/star.png" alt></li>
-                                        <li class="img-item"><img src="./assets/img/sub/star.png" alt></li>
-                                    </ul>
-                                    <div class="date-box">
-                                        <span class="id">ekth**</span>
-                                        <span class="date">2023.05.17</span>
-                                    </div>
-                                </div>
-                                <div class="review-box"><span>길이도 적당하고 반짝이는 게 예뻐요!</span></div>
-                                <div class="photo-box"><img src="./assets/img/sub/photo-01.jpg" alt></div>
-                                <button class="btn-like">
-                                        <svg role="img" aria-label="좋아요 비활성화" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M15.824 4.005a5.068 5.068 0 0 0-3.753 1.937L12 6.036l-.07-.094A5.066 5.066 0 0 0 7.94 4C5.097 4 2.8 6.386 2.8 9.32a5.42 5.42 0 0 0 1.09 3.275l.124.158.382.449c1.175 1.338 3.37 3.338 6.587 6.004.663.55 1.626.54 2.279-.022l1.002-.869c3.007-2.626 4.895-4.449 5.691-5.505l.154-.215c.16-.208.312-.444.447-.695l.128-.256a.802.802 0 0 0 .059-.133c.294-.65.457-1.41.457-2.192C21.2 6.386 18.903 4 16.06 4l-.236.005zM16.06 5c2.282 0 4.14 1.93 4.14 4.32 0 .549-.098 1.082-.286 1.58l-.119.287-.006.013a4.521 4.521 0 0 1-.355.623l-.136.188c-.68 1.004-2.804 3.055-6.35 6.123l-.34.293a.765.765 0 0 1-.987.009l-1.058-.884c-2.714-2.287-4.564-4.01-5.541-5.155l-.118-.14A4.42 4.42 0 0 1 3.8 9.32C3.8 6.93 5.658 5 7.94 5c1.526 0 2.897.845 3.619 2.196l.441.826.441-.826C13.163 5.845 14.534 5 16.06 5z" fill="#000000" fill-rule="evenodd"></path></svg>
-                                        <span>좋아요</span>
-                                </button>
-                            </div>
-                        </div>
-                        <ul class="page-list">
-                            <li class="page-item on"><a href="">1</a></li>
-                            <li class="page-item"><a href="">2</a></li>
-                            <a href="" class="link-next">
-                                <img src="./assets/img/sub/arrow-02.png" alt>
-                            </a>
-                        </ul>
+                            <ul class="img-list">
+                                <div class="img-item"><a href=""><img src="./assets/img/sub/brand-02.jpg" alt></a></div>
+                                <div class="img-item"><a href=""><img src="./assets/img/sub/brand-03.jpg" alt></a></div>
+                                <div class="img-item"><a href=""><img src="./assets/img/sub/brand-04.jpg" alt></a></div>
+                                <div class="img-item"><a href=""><img src="./assets/img/sub/brand-05.jpg" alt></a></div>
+                                <div class="img-item"><a href=""><img src="./assets/img/sub/brand-06.jpg" alt></a></div>
+                                <div class="img-item"><a href=""><img src="./assets/img/sub/brand-07.jpg" alt></a></div>
+                                <div class="img-item"><a href=""><img src="./assets/img/sub/brand-08.jpg" alt></a></div>
+                                <div class="img-item"><a href=""><img src="./assets/img/sub/brand-09.jpg" alt></a></div>
+                                <div class="img-item"><a href=""><img src="./assets/img/sub/brand-10.jpg" alt></a></div>
+                            </ul>
+                        </section>
                     </div>
-                </div>
-            </section>
-        </div>
-        <div class="popup-wrap">
-            <div class="popup-inner">
-                <div class="text-box">
-                    <strong>로그인이 필요한 서비스입니다.</strong>
-                    <span>로그인 하시겠습니까?</span>
-                </div>
-                <div class="btn-box">
-                    <a href="" class="link-login">확인</a>
-                    <a href="" class="link-cancel">취소</a>
-                </div>
-                <button class="btn-close"><img src="./assets/img/close-b.png" alt="창닫기"></button>
+                    <div id="tab2" class="tab-content">
+                        <div class="review-wrap">
+                            <div class="text-wrap">
+                                <div class="text-box">
+                                    <span>상품 구매 후 후기를 작성하면 <em>최대 1,000 포인트</em>를 드려요</span>
+                                </div>
+                                <div class="check-box">
+                                    <input type="checkbox" name="" id="check">
+                                    <label for="check">
+                                        <span>포토후기만 보기</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="info-box">
+                                <div class="inner">
+                                    <div class="list-wrap">
+                                        <ul class="img-list">
+                                            <li class="img-item"><img src="./assets/img/sub/star.png" alt></li>
+                                            <li class="img-item"><img src="./assets/img/sub/star.png" alt></li>
+                                            <li class="img-item"><img src="./assets/img/sub/star.png" alt></li>
+                                            <li class="img-item"><img src="./assets/img/sub/star.png" alt></li>
+                                            <li class="img-item"><img src="./assets/img/sub/star.png" alt></li>
+                                        </ul>
+                                        <div class="date-box">
+                                            <span class="id">ekth**</span>
+                                            <span class="date">2023.05.17</span>
+                                        </div>
+                                    </div>
+                                    <div class="review-box"><span>길이도 적당하고 반짝이는 게 예뻐요!</span></div>
+                                    <div class="photo-box"><img src="./assets/img/sub/photo-01.jpg" alt></div>
+                                    <button class="btn-like" aria-label="좋아요 버튼">
+                                        <svg role="img" aria-label="좋아요 비활성화" width="24" height="24" viewBox="0 0 24 24"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M15.824 4.005a5.068 5.068 0 0 0-3.753 1.937L12 6.036l-.07-.094A5.066 5.066 0 0 0 7.94 4C5.097 4 2.8 6.386 2.8 9.32a5.42 5.42 0 0 0 1.09 3.275l.124.158.382.449c1.175 1.338 3.37 3.338 6.587 6.004.663.55 1.626.54 2.279-.022l1.002-.869c3.007-2.626 4.895-4.449 5.691-5.505l.154-.215c.16-.208.312-.444.447-.695l.128-.256a.802.802 0 0 0 .059-.133c.294-.65.457-1.41.457-2.192C21.2 6.386 18.903 4 16.06 4l-.236.005zM16.06 5c2.282 0 4.14 1.93 4.14 4.32 0 .549-.098 1.082-.286 1.58l-.119.287-.006.013a4.521 4.521 0 0 1-.355.623l-.136.188c-.68 1.004-2.804 3.055-6.35 6.123l-.34.293a.765.765 0 0 1-.987.009l-1.058-.884c-2.714-2.287-4.564-4.01-5.541-5.155l-.118-.14A4.42 4.42 0 0 1 3.8 9.32C3.8 6.93 5.658 5 7.94 5c1.526 0 2.897.845 3.619 2.196l.441.826.441-.826C13.163 5.845 14.534 5 16.06 5z"
+                                                fill="#000000" fill-rule="evenodd"></path>
+                                        </svg>
+                                        <span>좋아요</span>
+                                    </button>
+                                </div>
+                                <div class="inner">
+                                    <div class="list-wrap">
+                                        <ul class="img-list">
+                                            <li class="img-item"><img src="./assets/img/sub/star.png" alt></li>
+                                            <li class="img-item"><img src="./assets/img/sub/star.png" alt></li>
+                                            <li class="img-item"><img src="./assets/img/sub/star.png" alt></li>
+                                            <li class="img-item"><img src="./assets/img/sub/star.png" alt></li>
+                                            <li class="img-item"><img src="./assets/img/sub/star.png" alt></li>
+                                        </ul>
+                                        <div class="date-box">
+                                            <span class="id">ekth**</span>
+                                            <span class="date">2023.05.17</span>
+                                        </div>
+                                    </div>
+                                    <div class="review-box"><span>길이도 적당하고 반짝이는 게 예뻐요!</span></div>
+                                    <div class="photo-box"><img src="./assets/img/sub/photo-01.jpg" alt></div>
+                                    <button class="btn-like" aria-label="좋아요 버튼">
+                                        <svg role="img" aria-label="좋아요 비활성화" width="24" height="24" viewBox="0 0 24 24"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M15.824 4.005a5.068 5.068 0 0 0-3.753 1.937L12 6.036l-.07-.094A5.066 5.066 0 0 0 7.94 4C5.097 4 2.8 6.386 2.8 9.32a5.42 5.42 0 0 0 1.09 3.275l.124.158.382.449c1.175 1.338 3.37 3.338 6.587 6.004.663.55 1.626.54 2.279-.022l1.002-.869c3.007-2.626 4.895-4.449 5.691-5.505l.154-.215c.16-.208.312-.444.447-.695l.128-.256a.802.802 0 0 0 .059-.133c.294-.65.457-1.41.457-2.192C21.2 6.386 18.903 4 16.06 4l-.236.005zM16.06 5c2.282 0 4.14 1.93 4.14 4.32 0 .549-.098 1.082-.286 1.58l-.119.287-.006.013a4.521 4.521 0 0 1-.355.623l-.136.188c-.68 1.004-2.804 3.055-6.35 6.123l-.34.293a.765.765 0 0 1-.987.009l-1.058-.884c-2.714-2.287-4.564-4.01-5.541-5.155l-.118-.14A4.42 4.42 0 0 1 3.8 9.32C3.8 6.93 5.658 5 7.94 5c1.526 0 2.897.845 3.619 2.196l.441.826.441-.826C13.163 5.845 14.534 5 16.06 5z"
+                                                fill="#000000" fill-rule="evenodd"></path>
+                                        </svg>
+                                        <span>좋아요</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <ul class="page-list">
+                                <li class="page-item on"><a href="">1</a></li>
+                                <li class="page-item"><a href="">2</a></li>
+                                <a href="" class="link-next">
+                                    <img src="./assets/img/sub/arrow-02.png" alt>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
             </div>
-        </div>
-        <div class="fixed-wrap2">
-            <div class="btn-wrap">
-                <button class="btn btn-share"><img src="./assets/img/sub/btn-share.png" alt></button>
-                <button class="btn btn-like">
-                    <svg role="img" aria-label="좋아요 비활성화" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M15.824 4.005a5.068 5.068 0 0 0-3.753 1.937L12 6.036l-.07-.094A5.066 5.066 0 0 0 7.94 4C5.097 4 2.8 6.386 2.8 9.32a5.42 5.42 0 0 0 1.09 3.275l.124.158.382.449c1.175 1.338 3.37 3.338 6.587 6.004.663.55 1.626.54 2.279-.022l1.002-.869c3.007-2.626 4.895-4.449 5.691-5.505l.154-.215c.16-.208.312-.444.447-.695l.128-.256a.802.802 0 0 0 .059-.133c.294-.65.457-1.41.457-2.192C21.2 6.386 18.903 4 16.06 4l-.236.005zM16.06 5c2.282 0 4.14 1.93 4.14 4.32 0 .549-.098 1.082-.286 1.58l-.119.287-.006.013a4.521 4.521 0 0 1-.355.623l-.136.188c-.68 1.004-2.804 3.055-6.35 6.123l-.34.293a.765.765 0 0 1-.987.009l-1.058-.884c-2.714-2.287-4.564-4.01-5.541-5.155l-.118-.14A4.42 4.42 0 0 1 3.8 9.32C3.8 6.93 5.658 5 7.94 5c1.526 0 2.897.845 3.619 2.196l.441.826.441-.826C13.163 5.845 14.534 5 16.06 5z" fill="#000000" fill-rule="evenodd"></path></svg>
-                    <span>1,217</span>
-                </button>
+            <div class="popup-wrap">
+                <h4 class="blind">로그인팝업</h4>
+                <div class="popup-inner">
+                    <div class="text-box">
+                        <strong>로그인이 필요한 서비스입니다.</strong>
+                        <span>로그인 하시겠습니까?</span>
+                    </div>
+                    <div class="btn-box">
+                        <a href="" class="link-login">확인</a>
+                        <a href="" class="link-cancel">취소</a>
+                    </div>
+                    <button class="btn-close"><img src="./assets/img/close-b.png" alt="창닫기"></button>
+                </div>
             </div>
-            <a href="" class="link-buy"><span>구매하기</span></a>
-        </div>
-        <div class="return-wrapper return">
-            <h2 class="blind">반품/배송관련</h2>
-            <div class="return-inner">
-                <h3 class="title-box top">배송 관련 안내</h3>
-                <div class="return-wrap">
-                    <p class="sub-box">
-                        <span class="sub-title">배송비</span>
-                        <span class="sub-text">아몬즈는 전상품 무료배송입니다.</span>
-                    </p>
-                    <p class="sub-box">
-                        <span class="sub-title">추가 배송비</span>
-                        <span class="sub-text">제주 및 도서산간 지역은 배송비가 별도로 부과됩니다.</span>
-                        <span class="sub-text">- 제주도 : 2,000원 / 그 외 도서산간 지역 : 2,000원</span>
-                    </p>
+            <div class="fixed-wrap2">
+                <h4 class="blind">구매관련 탭</h4>
+                <div class="btn-wrap">
+                    <button class="btn btn-share" aria-label="공유하기버튼"><img src="./assets/img/sub/btn-share.png"
+                            alt></button>
+                    <button class="btn btn-like" aria-label="좋아요 버튼">
+                        <svg role="img" aria-label="좋아요 비활성화" width="24" height="24" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M15.824 4.005a5.068 5.068 0 0 0-3.753 1.937L12 6.036l-.07-.094A5.066 5.066 0 0 0 7.94 4C5.097 4 2.8 6.386 2.8 9.32a5.42 5.42 0 0 0 1.09 3.275l.124.158.382.449c1.175 1.338 3.37 3.338 6.587 6.004.663.55 1.626.54 2.279-.022l1.002-.869c3.007-2.626 4.895-4.449 5.691-5.505l.154-.215c.16-.208.312-.444.447-.695l.128-.256a.802.802 0 0 0 .059-.133c.294-.65.457-1.41.457-2.192C21.2 6.386 18.903 4 16.06 4l-.236.005zM16.06 5c2.282 0 4.14 1.93 4.14 4.32 0 .549-.098 1.082-.286 1.58l-.119.287-.006.013a4.521 4.521 0 0 1-.355.623l-.136.188c-.68 1.004-2.804 3.055-6.35 6.123l-.34.293a.765.765 0 0 1-.987.009l-1.058-.884c-2.714-2.287-4.564-4.01-5.541-5.155l-.118-.14A4.42 4.42 0 0 1 3.8 9.32C3.8 6.93 5.658 5 7.94 5c1.526 0 2.897.845 3.619 2.196l.441.826.441-.826C13.163 5.845 14.534 5 16.06 5z"
+                                fill="#000000" fill-rule="evenodd"></path>
+                        </svg>
+                        <span>1,217</span>
+                    </button>
                 </div>
-                <div class="return-wrap">
-                    <h3 class="title-box">반품/교환 안내</h3>
-                    <p class="sub-box">
-                        <span class="sub-title">반품/교환 안내</span>
-                        <span class="sub-text">교환 및 환불은 수정하신 후 7일 이내에 구매하신 홈페이지,스마트스토어를 통해 접수하실 수 있습니다.
-                            환불 시 카드 취소는 상품 검수 후 3일에서 7일, 무통장/계좌이체의 경우 3일정도 소요됩니다.
-                            단순 변심에 의한 교환 및 환불시 왕복택배비 5000원은 고객님께서 부담하셔야 합니다.</span>
-                    </p>
-                    <p class="sub-box">
-                        <span class="sub-title">반품/교환 불가사유</span>
-                        <span class="sub-text">자상거래 등에서의 소비자보호에 관한 법률 등에 의한 청약철회 제한 사유에 해당하는 경우 및 기타 객관적으로 이에 준하는 것으로 인정되는 경우 청약철회가 제한될 수 있습니다.</span>
-                    </p>
-                    <p class="sub-box margin">
-                        <span class="sub-title">반품 사유에 따른 환불정보</span>
-                        <span class="sub-title">- 단순 변심이나 구매자의 사유로 인한 반품 시:</span>
-                        <span class="sub-text">왕복 배송비를 차감하여 환불해드립니다.<br>(도서산간 지역의 경우, 도서산간 추가배송비 부과)</span>
-                    </p>
-                    <p class="sub-box margin">
-                        <span class="sub-title">- 제품의 하자나 기타 브랜드의 과실로 인한 반품 시 :</span>
-                        <span class="sub-text"><strong>전액 환불</strong>해드립니다.</span>
-                    </p>
-                    <p class="sub-box margin">
-                        <span class="sub-title">- 반품/교환 시 택배 발송 방법 :</span>
-                        <span class="sub-text">상품을 받으신 택배사/송장번호로 반품 접수 해주세요. 다른 택배사로 반품 접수하실 경우, 해당 반송 비용은 판매자가 책임지지 않습니다.</span>
-                    </p>
-                    <p class="sub-box">
-                        <span class="sub-title">반품 / 교환 시 보내실 곳</span>
-                        <span class="sub-text">대구 수성구 수성로 71 107동 909호</span>
-                    </p>
-                </div>
-                <a href="" class="btn-view">거래조건에 관한 정보 펼쳐보기</a>
-                <div class="info-wrap">
-                    <p class="sub-box">
-                        <span class="sub-title">브랜드 책임으로 인한 반품의 경우 반품 가능 기간 및 통신판매업자가 부담하는 반품 비용에 대한 정보</span>
-                        <span class="sub-text">전자상거래등에서의소비자보호에관한법률 등에 의한 제품의 하자 또는 오배송 등으로 인한 청약철회의 경우에는 상품 수령 후 3개월 이내, 그 사실을 안 날 또는 알 수 있었던 날로부터 30일 이내에 청약철회를 할 수 있으며, 반품 비용은 통신판매업자가 부담합니다.</span>
-                    </p>
-                    <p class="sub-box">
-                        <span class="sub-title">재화등의 교환/반품/보증 조건 및 품질보증기준</span>
-                        <span class="sub-text">소비자분쟁해결기준(공정거래위원회 고시) 및 관계법령에 따릅니다.</span>
-                    </p>
-                    <p class="sub-box">
-                        <span class="sub-title">대금을 환불받기 위한 방법과 환불이 지연될 경우 지연에 따른 배상금을 지급받을 수 있다는 사실 및 배상금 지급의 구체적 조건 및 절차</span>
-                        <span class="sub-text">상품 상세 참조</span>
-                    </p>
-                    <p class="sub-box">
-                        <span class="sub-title">소비자피해보상의 처리, 재화등에 대한 불만 처리 및 소비자와 사업자 사이의 분쟁처리에 관한 사항</span>
-                        <span class="sub-text">소비자분쟁해결기준(공정거래위원회 고시) 및 관계법령에 따릅니다.</span>
-                    </p>
-                </div>
-                <a href="" class="btn-close"><img src="./assets/img/close-b.png" alt=""></a>
+                <a href="" class="link-buy"><span>구매하기</span></a>
             </div>
-        </div>
-        <div class="return-wrapper as">
-            <h2 class="blind">A/S 정보</h2>
-            <div class="return-inner">
-                <h3 class="title-box top">A/S 정보</h3>
-                <div class="return-wrap">
-                    <p class="sub-box">
-                        <span class="sub-title">A/S 안내</span>
-                        <span class="sub-text">상세설명 참조</span>
-                    </p>
-                    <p class="sub-box">
-                        <span class="sub-title">착용시 주의 사항</span>
-                        <span class="sub-text">상세설명 참조</span>
-                    </p>
-                    <p class="sub-box">
-                        <span class="sub-title">품질보증 기준</span>
-                        <span class="sub-text">상세설명 참조</span>
-                    </p>
-                    <p class="sub-box">
-                        <span class="sub-title">제조자</span>
-                        <span class="sub-text">A.G.C</span>
-                    </p>
-                    <p class="sub-box">
-                        <span class="sub-title">제조국</span>
-                        <span class="sub-text">Korea</span>
-                    </p>
+            <div class="return-wrapper return">
+                <h4 class="blind">반품/배송관련</h4>
+                <div class="return-inner">
+                    <em class="title-box top">배송 관련 안내</em>
+                    <div class="return-wrap">
+                        <p class="sub-box">
+                            <strong class="sub-title">배송비</strong>
+                            <span class="sub-text">아몬즈는 전상품 무료배송입니다.</span>
+                        </p>
+                        <p class="sub-box">
+                            <strong class="sub-title">추가 배송비</strong>
+                            <span class="sub-text">제주 및 도서산간 지역은 배송비가 별도로 부과됩니다.</span>
+                            <span class="sub-text">- 제주도 : 2,000원 / 그 외 도서산간 지역 : 2,000원</span>
+                        </p>
+                    </div>
+                    <div class="return-wrap">
+                        <h4 class="title-box">반품/교환 안내</h4>
+                        <p class="sub-box">
+                            <strong class="sub-title">반품/교환 안내</strong>
+                            <span class="sub-text">교환 및 환불은 수정하신 후 7일 이내에 구매하신 홈페이지,스마트스토어를 통해 접수하실 수 있습니다.
+                                환불 시 카드 취소는 상품 검수 후 3일에서 7일, 무통장/계좌이체의 경우 3일정도 소요됩니다.
+                                단순 변심에 의한 교환 및 환불시 왕복택배비 5000원은 고객님께서 부담하셔야 합니다.</span>
+                        </p>
+                        <p class="sub-box">
+                            <strong class="sub-title">반품/교환 불가사유</strong>
+                            <span class="sub-text">자상거래 등에서의 소비자보호에 관한 법률 등에 의한 청약철회 제한 사유에 해당하는 경우 및 기타 객관적으로 이에 준하는
+                                것으로 인정되는 경우 청약철회가 제한될 수 있습니다.</span>
+                        </p>
+                        <p class="sub-box margin">
+                            <strong class="sub-title">반품 사유에 따른 환불정보</strong>
+                            <strong class="sub-title">- 단순 변심이나 구매자의 사유로 인한 반품 시:</strong>
+                            <span class="sub-text">왕복 배송비를 차감하여 환불해드립니다.<br>(도서산간 지역의 경우, 도서산간 추가배송비 부과)</span>
+                        </p>
+                        <p class="sub-box margin">
+                            <strong class="sub-title">- 제품의 하자나 기타 브랜드의 과실로 인한 반품 시 :</strong>
+                            <span class="sub-text"><strong>전액 환불</strong>해드립니다.</span>
+                        </p>
+                        <p class="sub-box margin">
+                            <strong class="sub-title">- 반품/교환 시 택배 발송 방법 :</strong>
+                            <span class="sub-text">상품을 받으신 택배사/송장번호로 반품 접수 해주세요. 다른 택배사로 반품 접수하실 경우, 해당 반송 비용은 판매자가 책임지지
+                                않습니다.</span>
+                        </p>
+                        <p class="sub-box">
+                            <strong class="sub-title">반품 / 교환 시 보내실 곳</strong>
+                            <span class="sub-text">대구 수성구 수성로 71 107동 909호</span>
+                        </p>
+                    </div>
+                    <a href="" class="btn-view">거래조건에 관한 정보 펼쳐보기</a>
+                    <div class="info-wrap">
+                        <p class="sub-box">
+                            <strong class="sub-title">브랜드 책임으로 인한 반품의 경우 반품 가능 기간 및 통신판매업자가 부담하는 반품 비용에 대한 정보</strong>
+                            <span class="sub-text">전자상거래등에서의소비자보호에관한법률 등에 의한 제품의 하자 또는 오배송 등으로 인한 청약철회의 경우에는 상품 수령 후 3개월
+                                이내, 그 사실을 안 날 또는 알 수 있었던 날로부터 30일 이내에 청약철회를 할 수 있으며, 반품 비용은 통신판매업자가 부담합니다.</span>
+                        </p>
+                        <p class="sub-box">
+                            <strong class="sub-title">재화등의 교환/반품/보증 조건 및 품질보증기준</strong>
+                            <span class="sub-text">소비자분쟁해결기준(공정거래위원회 고시) 및 관계법령에 따릅니다.</span>
+                        </p>
+                        <p class="sub-box">
+                            <strong class="sub-title">대금을 환불받기 위한 방법과 환불이 지연될 경우 지연에 따른 배상금을 지급받을 수 있다는 사실 및 배상금 지급의 구체적
+                                조건 및 절차</strong>
+                            <span class="sub-text">상품 상세 참조</span>
+                        </p>
+                        <p class="sub-box">
+                            <strong class="sub-title">소비자피해보상의 처리, 재화등에 대한 불만 처리 및 소비자와 사업자 사이의 분쟁처리에 관한 사항</strong>
+                            <span class="sub-text">소비자분쟁해결기준(공정거래위원회 고시) 및 관계법령에 따릅니다.</span>
+                        </p>
+                    </div>
+                    <a href="" class="btn-close"><img src="./assets/img/close-b.png" alt=""></a>
                 </div>
-                <div class="return-wrap">
-                    <h3 class="title-box">브랜드 연락처</h3>
-                    <p class="sub-box">
-                        <span class="sub-title">고객센터 전화번호</span>
-                        <span class="sub-text">010-2929-3746</span>
-                    </p>
-                    <p class="sub-box">
-                        <span class="sub-title">카카오톡 플러스친구</span>
-                        <span class="sub-text">-</span>
-                    </p>
-                </div>
-                <a href="" class="btn-close"><img src="./assets/img/close-b.png" alt=""></a>
             </div>
-        </div>
+            <div class="return-wrapper as">
+                <h4 class="blind">A/S 정보</h4>
+                <div class="return-inner">
+                    <em class="title-box top">A/S 정보</em>
+                    <div class="returem">
+                        <p class="sub-box">
+                            <strong class="sub-title">A/S 안내</strong>
+                            <span class="sub-text">상세설명 참조</span>
+                        </p>
+                        <p class="sub-box">
+                            <strong class="sub-title">착용시 주의 사항</strong>
+                            <span class="sub-text">상세설명 참조</span>
+                        </p>
+                        <p class="sub-box">
+                            <strong class="sub-title">품질보증 기준</strong>
+                            <span class="sub-text">상세설명 참조</span>
+                        </p>
+                        <p class="sub-box">
+                            <strong class="sub-title">제조자</strong>
+                            <span class="sub-text">A.G.C</span>
+                        </p>
+                        <p class="sub-box">
+                            <strong class="sub-title">제조국</strong>
+                            <span class="sub-text">Korea</span>
+                        </p>
+                    </div>
+                    <div class="return-wrap">
+                        <h3 class="title-box">브랜드 연락처</h3>
+                        <p class="sub-box">
+                            <strong class="sub-title">고객센터 전화번호</strong>
+                            <span class="sub-text">010-2929-3746</span>
+                        </p>
+                        <p class="sub-box">
+                            <strong class="sub-title">카카오톡 플러스친구</strong>
+                            <span class="sub-text">-</span>
+                        </p>
+                    </div>
+                    <a href="" class="btn-close"><img src="./assets/img/close-b.png" alt=""></a>
+                </div>
+            </div>
+        </section>
     </main>
 
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
@@ -639,4 +734,5 @@
     <script src="./assets/js/common.js"></script>
     <script src="./assets/js/sub.js"></script>
 </body>
+
 </html>

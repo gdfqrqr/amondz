@@ -26,7 +26,7 @@
 .cate-area .cate-list { display: grid; grid-template-columns: repeat(2, 1fr); padding: 0 16px; } 
 .cate-area .cate-list .cate-item { line-height: 42px; height: 42px; } 
 .cate-area .cate-item a { display: block; font-size: 15px; letter-spacing: -0.5px; } 
-.cate-area .cate-list .link-more { font-weight: 500; font-size: 13px; color: rgb(155, 155, 155); } 
+.cate-area .link-more { font-weight: 500; font-size: 13px; color: rgb(155, 155, 155); padding:10px  16px; display: block;} 
 .cate-area .cate-list.more { display: none; } 
 .cate-area .cate-list.more.show { display: grid; } 
 .cate-area .cate-wrap.brand .title-wrap { margin-bottom: 25px; } 

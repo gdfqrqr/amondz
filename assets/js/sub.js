@@ -21,7 +21,6 @@ $(function () {
     $('.tab-item').click(function () {
         var offset = $(".tab-item").offset(); 
         $("html, body").animate({scrollTop: offset.top},200);
-
     })
 
 

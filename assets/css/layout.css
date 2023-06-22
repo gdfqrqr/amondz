@@ -71,7 +71,7 @@
 .footer .sub-wrap.show { display: flex; } 
 .footer .sub-wrap.show .sub-item { font-size: 11px; line-height: 17px; color: #777; } 
 .footer .info-wrap { padding: 15px 15px 90px; } 
-.footer .info-wrap .logo-wrap { margin-bottom: 15px; } 
+.footer .info-wrap .logo-wrap { margin-bottom: 15px; display: block;} 
 .footer .info-wrap .info-list { } 
 .footer .info-list .info-item { } 
 .footer .info-item span { line-height: 17px; font-size: 11px; letter-spacing: -0.3px; color: #777 } 

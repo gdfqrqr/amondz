@@ -64,22 +64,26 @@ $(function () {
     //search popup 띄우기, 닫기
     $('.header .btn-search').click(function() {
         $('body').addClass('hidden')
+        $('#mask').show()
         $('.search-wrap').show()
     })
 
     $('.search-wrap .btn-cancel').click(function(e){
         e.preventDefault()
         $('body').removeClass('hidden')
+        $('#mask').hide()
         $('.search-wrap').hide()
     })
 
     //category 띄우기, 닫기
     $('.header .btn-menu').click(function() {
-        $('body').addClass('hidden')
+        console.log('실행');
         $('.cate-area').show()
+        $('body').addClass('hidden')
     })
 
     $('.cate-area .btn-close').click(function(){
+        console.log('종료');
         $('body').removeClass('hidden')
         $('.cate-area').hide()
     })
@@ -96,19 +100,27 @@ $(function () {
         e.preventDefault();
         $('.popup-wrap').addClass('show')
         $('body').addClass('hidden')
+        $('#mask').show()
     })
 
     $('.popup-wrap .btn-close').click(function(e){
         e.preventDefault();
         $('.popup-wrap').removeClass('show')
         $('body').removeClass('hidden')
+        $('#mask').hide()
     })
     
-    $(document).click(function(e) {
-        if ($('main').has(e.target).length == 0) {
-            $('body').removeClass('hidden')
-            $('.popup-wrap').removeClass('show')
-        }
+    $('.link-cancel').click(function(e){
+        e.preventDefault()
+        $('.popup-wrap').removeClass('show')
+        $('body').removeClass('hidden')
+        $('#mask').hide()
+    })
+
+    $('#mask').click(function() {
+        $(this).hide()
+        $('body').removeClass('hidden')
+        $('.popup-wrap').removeClass('show')
     })
 
 

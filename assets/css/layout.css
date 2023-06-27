@@ -14,7 +14,7 @@
 .header .header-area .logo-wrap { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); } 
 
 /* category */
-.header .cate-area { z-index: 3; background: #fff; top: 0; width: 100%; height: 100%; position: fixed; overflow-y: auto; } 
+.header .cate-area { z-index: 5; background: #fff; top: 0; width: 100%; height: 100%; position: fixed; overflow-y: auto; } 
 .cate-area .cate-inner { padding: 90px 25px; } 
 .header .cate-area .login-wrap { display: flex; align-items: flex-end; justify-content: space-between; height: 110px; padding: 0 25px 25px; position: fixed; width: 100%; background: #fff; } 
 .header .cate-area .logo-box { width: 85px; height: 18px; } 
@@ -91,7 +91,7 @@
 .fixed-wrap.hide { display: none; } 
 
 /* login popup */
-.popup-wrap { position: fixed; bottom: 0; width: 100%; z-index: 4; } 
+.popup-wrap { position: fixed; bottom: 0; width: 100%; z-index: 5; } 
 .popup-wrap.show { display: flex; } 
 .popup-inner { position: relative; width: 100%; margin-top: auto; padding: 30px 15px 5px; background: #fff; } 
 .popup-wrap .text-box { margin-bottom: 22px; } 
